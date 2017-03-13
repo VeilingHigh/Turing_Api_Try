@@ -23,15 +23,13 @@ public class TuringQA
         }
     }
     public static String get_request() {
-        String key ="e71b7e3082cb4612bdd9c8b9eb6212a3";
+        String key ="XXXXXXXXXXXXXXXXXXXXX";
         String api="http://www.tuling123.com/openapi/api?key="+key+"&info=";
 
         Scanner scan = new Scanner(System.in);
-        // 从键盘接收数据
-
-        //nextLine方式接收字符串
+       
         System.out.println("尤里卡：\n");
-        // 判断是否还有输入
+        
         if(scan.hasNextLine()){
             String str = scan.nextLine();
 
@@ -54,11 +52,7 @@ public class TuringQA
             {
                 connection = (HttpURLConnection) urlConnection;
             }
-           /* else
-            {
-                System.out.println("请输入 URL 地址");
-
-            }*/
+   
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(connection.getInputStream()));
             String urlString = "";
